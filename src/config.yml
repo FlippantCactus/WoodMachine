@@ -1,0 +1,56 @@
+#Display effects above dispenser or destroyed block
+enable-effects: true
+
+#Time between breaking tree levels (in seconds)
+cycle-time: 10
+
+#Respect WorldGuard region build flags
+worldguard-regions: false
+
+bounds:
+  #Maximum tree height
+  max-height: 20
+  #Area radius for area around tree
+  radius: 3
+  #Farm logs from big trees which are not inside the defined area
+  big-tree-getter:
+    enabled: true
+    extra-width: 2
+
+economy:
+  #Enable economy functions
+  enabled: false
+  #Price for creating a WoodMachine
+  creation-price: 45.0
+  #Refund if player destroys WoodMachine
+  destroy-refund: 40.0
+  #Price per farmed block by WoodMachine
+  #You can disable price-per-block by setting them to 0.0
+  price-per-block:
+    log: 5.0
+    leaves: 5.0
+
+#Define tool damage for breaking blocks
+tools:
+  use-detailed: false
+  #Used if use-detailed = false
+  general:
+    damage-cut-log: 1
+    damage-cut-leaves: 2
+  #Used if use-detailed = true
+  detailed:
+    diamond-axe:
+      damage-cut-log: 200
+      damage-cut-leaves: 250
+    gold-axe:
+      damage-cut-log: 1
+      damage-cut-leaves: 20
+    iron-axe:
+      damage-cut-log: 1
+      damage-cut-leaves: 1
+    stone-axe:
+      damage-cut-log: 20
+      damage-cut-leaves: 20
+    wood-axe:
+      damage-cut-log: 1
+      damage-cut-leaves: 1

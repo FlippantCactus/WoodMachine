@@ -1,0 +1,13 @@
+name: WoodMachine
+version: 1.0
+main: de.chillupx.WoodMachine
+author: ChillUpX
+softdepend: [WorldGuard, WorldEdit, Vault]
+commands:
+  woodmachine:
+    usage: /<command> [create]
+permissions:
+  woodmachine.create:
+    description: Allows player to create a new WoodMachine
+  woodmachine.breakothers:
+    description: Allows player to destroy others WoodMachines
